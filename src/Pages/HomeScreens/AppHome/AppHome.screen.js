@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 
 import data, { homes } from './../../../../res/data';
 import { HomeCard } from './../../../sections';
@@ -21,7 +22,7 @@ class AppHome extends Component {
 
     render(){
         return(
-            <ScrollView>
+            <ScrollView contentContainerStyle={{alignItems: 'center', paddingVertical: 15}}>
                 {homes.map((home, key) => <HomeCard key={key} home={home}/>)}
             </ScrollView>
         );

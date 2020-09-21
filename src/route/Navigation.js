@@ -31,7 +31,7 @@ class Navigation extends Component {
                         labelStyle={ { fontWeight: 'bold', } }
                         initial
                     >
-                        <Scene key="home" component={ AppHome } title="Homes"  icon={ TabIcon } hideNavBar />
+                        <Scene key="home" component={ AppHome } title="Homes"  icon={ TabIcon } />
                         <Scene key="profile" component={ Example } title="Profiles" icon={ TabIcon } hideNavBar />
                         <Scene key="login" component={ Example } title="Logins" icon={ TabIcon } hideNavBar />
                         <Scene key="settings" component={ Example } title="Settings" icon={ TabIcon } hideNavBar />
