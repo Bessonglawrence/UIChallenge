@@ -5,7 +5,7 @@
 		name: 'Music player',
 		about: 'Working in the mungo, I help my clients find apartments, studios in and around Mungo',
         type: 'non_animated',
-		key: 'musicPlayer',
+		key: 'musicplayer',
 		rating: 5,
 		color: 'yellow',
 	},

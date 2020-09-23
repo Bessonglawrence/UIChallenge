@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {View, Text,TouchableOpacity, ImageBackground} from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 class HomeCard extends Component {
     render(){
@@ -16,9 +17,9 @@ class HomeCard extends Component {
                 elevation: 3,
                 marginVertical: 5
                 }}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => Actions.home.key()}>
                     <ImageBackground
-                    source = {require('./../../../res/Images/city.jpeg')}
+                    source = {home.image}
                     style = {{ height: 240, width: 190, padding: 10, borderRadius: 10}}
                     >
                         <View style={{flexDirection: 'row', marginTop: 165}}>

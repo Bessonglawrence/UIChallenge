@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
-import data, { homes } from './../../../../res/data';
-import { HomeCard } from './../../../sections';
+import data, { homes } from '../../../../res/data';
+import { HomeCard } from '../../../sections';
 
 class AppHome extends Component {
 
