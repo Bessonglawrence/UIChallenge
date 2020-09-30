@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView, View, Text, Animated, FlatList } from 'react-native';
+import { PanGestureHandler } from 'react-native-gesture-handler';
 
 import data, { homes } from '../../../../res/data';
 import { HomeCard } from '../../../sections';
+import styles from './AppHome.style';
+
 
 class AppHome extends Component {
 
@@ -11,20 +13,34 @@ class AppHome extends Component {
         super(props);
         this.state = {
             homes : [],
-
         }
     }
 
     componentDidMount(){
-        const tHome = data;
-        this.setState({homes : tHome })
+        const homes = data;
+        this.setState({homes : homes })
+    }
+    scrollEnded = (obj) => {
+        this.scrolledDistance = obj.nativeEvent.contentOffset.y;
     }
 
     render(){
         return(
-            <ScrollView contentContainerStyle={{alignItems: 'center', paddingVertical: 15}}>
-                {homes.map((home, key) => <HomeCard key={key} home={home}/>)}
-            </ScrollView>
+            <FlatList
+                contentContainerStyle={styles.mainContainer}
+                onScrollEndDrag={this.scrollEnded}
+                data={homes}
+                renderItem={({ item, index }) => { 
+                    {
+                        return (
+                            <View key={index}>
+                                <HomeCard home={item} key={item.id} /> 
+                            </View>
+                        )
+                    }
+                }}
+                keyExtractor={item => (item.id).toString()}
+            />
         );
     }
 }

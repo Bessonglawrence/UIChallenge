@@ -4,7 +4,7 @@ import {Router, Stack, Scene,} from 'react-native-router-flux';
 import {
     AppHome,
     Example, 
-    MusicPlayer,
+    RentFlicker,
     SplashScreens,
     ProfileScreens,
     LoginScreens,
@@ -21,6 +21,7 @@ class Navigation extends Component {
         return (
             <Router>
                 <Stack key="root">
+                <Scene key="rentflicker" component={ RentFlicker } title="Rent Flicker" hideNavBar />
                     <Scene 
                         key="home"
                         tabs
@@ -32,13 +33,7 @@ class Navigation extends Component {
                         labelStyle={ { fontWeight: 'bold', } }
                         initial
                     >
-                        <Scene key="home" 
-                            component={ AppHome } 
-                            title="Homes"  
-                            icon={ TabIcon }
-                        > 
-                            <Scene key="musicplayer" component={ MusicPlayer } title="MusicPlayer" hideNavBar />
-                        </Scene>
+                        <Scene key="home" component={ AppHome } title="Homes" icon={ TabIcon }/> 
                         <Scene key="profile" component={ Example } title="Profiles" icon={ TabIcon } hideNavBar />
                         <Scene key="login" component={ Example } title="Logins" icon={ TabIcon } hideNavBar />
                         <Scene key="settings" component={ Example } title="Settings" icon={ TabIcon } hideNavBar />

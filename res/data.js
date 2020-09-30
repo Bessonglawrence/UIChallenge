@@ -1,13 +1,13 @@
  const homes = [
 	{
 		id: 1,
-		image: require('./Images/back.jpeg'),
+		image: require('./Images/rentflicker.png'),
 		name: 'Music player',
 		about: 'Working in the mungo, I help my clients find apartments, studios in and around Mungo',
         type: 'non_animated',
 		key: 'musicplayer',
 		rating: 5,
-		color: 'yellow',
+		color: 'lightblue',
 	},
 	{
 		id: 2,
@@ -26,7 +26,43 @@
 		type: 'animated',
 		rating: 4,
 		color: 'brown',
-	}
+	},
+	{
+		id: 4,
+		image: require('./Images/back.jpeg'),
+		name: 'Classic home',
+		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
+		type: 'animated',
+		rating: 3,
+		color: 'purple',
+	},
+	{
+		id: 5,
+		image: require('./Images/back.jpeg'),
+		name: 'Classic home',
+		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
+		type: 'animated',
+		rating: 3,
+		color: 'purple',
+	},
+	{
+		id: 6,
+		image: require('./Images/back.jpeg'),
+		name: 'Classic home',
+		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
+		type: 'animated',
+		rating: 3,
+		color: 'purple',
+	},
+	{
+		id: 7,
+		image: require('./Images/back.jpeg'),
+		name: 'Classic home',
+		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
+		type: 'animated',
+		rating: 3,
+		color: 'purple',
+	},
 ];  
 
 const profile = [
