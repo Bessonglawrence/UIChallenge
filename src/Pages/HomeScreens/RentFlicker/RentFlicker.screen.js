@@ -1,5 +1,5 @@
 import React from 'react';
-import { View , Text, TextInput,Image } from 'react-native';
+import { View , Text, TextInput,Image, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -9,23 +9,23 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 const RentFlicker = () => {
     return (
-        <View style={{flex: 1, backgroundColor: 'white', alignItems: 'center'}}>
+        <View style={styles.mainContainer}>
             <LinearGradient 
                 colors={['#68a7ed', '#4c97ea']} 
-                style={{width: '100%', height: 180, paddingTop: 20}}
+                style={styles.linearGradient}
                 start={{x: 0.0, y: 0.25}} end={{x: 0.5, y: 1.0}}
                 locations={[0.6,1]}
             >
-                <Text style={{color: 'white', marginBottom: 3, fontSize: 22, fontWeight: 'bold', marginLeft: 30}}>
+                <Text style={styles.headerText}>
                     RENT FLICKER
                 </Text>
-                <Text style={{ color: 'white', fontSize: 16, fontStyle: 'italic', marginLeft: 30}}>
+                <Text style={styles.subHeaderText}>
                     Main Categories
                 </Text>
-                <View  style={{backgroundColor:'white', flexDirection: 'row', width: 300, alignSelf: 'center', borderRadius: 4, marginTop: 30}}>
-                    <Icon name="search" color="lightgrey" size={35} style={{marginTop: 6, marginLeft: 4}}/>
+                <View  style={styles.searchView}>
+                    <Icon name="search" color="lightgrey" size={35} style={styles.searchIcon}/>
                     <TextInput
-                        style={{width: 250, fontSize: 18, marginLeft: 5, paddingTop: 5}}
+                        style={styles.searchInput}
                         placeholder="Search ..."
                         underlineColorAndroid='transparent'
                     />
@@ -33,131 +33,161 @@ const RentFlicker = () => {
             </LinearGradient>
             <ScrollView showsVerticalScrollIndicator={false}>
             <View style={{marginHorizontal: 20}}>
-                <Text style={{color: '#12539c', fontSize: 20, marginTop: 10, fontWeight: 'bold', marginLeft: 2}}>
+                <Text style={styles.categoryHeader}>
                     Our Categories
                 </Text>
-                <View style={{borderWidth: .5, borderColor: 'lightgrey', padding: 20, marginTop: 10, borderRadius: 5, shadowOffset: { width: 2, height: 5 }, shadowColor: 'lightgrey', shadowOpacity: 1, shadowRadius: 5, elevation: 2,}}>
-                    <View style={{flexDirection: 'row'}}>
-                        <Image 
-                            source={require('./../../../../res/Images/Avatar.png')}
-                            style={{height: 80, width: 80, marginHorizontal: 5, marginHorizontal: 5}}
-                        />
-                        <Image 
-                            source={require('./../../../../res/Images/Avatar.png')}
-                            style={{height: 80, width: 80, marginHorizontal: 5, marginHorizontal: 5}}
-                        />
-                        <Image 
-                            source={require('./../../../../res/Images/Avatar.png')}
-                            style={{height: 80, width: 80, marginHorizontal: 5, marginHorizontal: 5}}
-                        />
+                <View style={styles.categoryCard}>
+                    <View style={{flexDirection: 'row', marginBottom: 4}}>
+                        <TouchableOpacity>
+                            <Image 
+                                source={require('./../../../../res/Images/appliances.png')}
+                                style={styles.categoryCardImage}
+                            />
+                            <Text style={styles.categoryCardText}>
+                                Appliances
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={{marginHorizontal: 30}}>
+                            <Image 
+                                source={require('./../../../../res/Images/bed.png')}
+                                style={styles.categoryCardImage}
+                            />
+                            <Text style={styles.categoryCardText}>
+                                Bedroom
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <Image 
+                                source={require('./../../../../res/Images/warehouse.png')}
+                                style={styles.categoryCardImage}
+                            />
+                            <Text style={styles.categoryCardText}>
+                                Storage
+                            </Text>
+                        </TouchableOpacity>
                     </View>
-                    <View style={{flexDirection: 'row'}}>
-                        <Image 
-                            source={require('./../../../../res/Images/Avatar.png')}
-                            style={{height: 80, width: 80, marginHorizontal: 5, marginHorizontal: 5}}
-                        />
-                        <Image 
-                            source={require('./../../../../res/Images/Avatar.png')}
-                            style={{height: 80, width: 80, marginHorizontal: 5, marginHorizontal: 5}}
-                        />
-                        <Image 
-                            source={require('./../../../../res/Images/Avatar.png')}
-                            style={{height: 80, width: 80, marginHorizontal: 5, marginHorizontal: 5}}
-                        />
+                    <View style={{flexDirection: 'row', marginTop: 4}}>
+                        <TouchableOpacity >
+                            <Image 
+                                source={require('./../../../../res/Images/video.png')}
+                                style={styles.categoryCardImage}
+                            />
+                            <Text style={styles.categoryCardText}>
+                                Coverage
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={{marginHorizontal: 30}}>
+                            <Image 
+                                source={require('./../../../../res/Images/sofa.png')}
+                                style={styles.categoryCardImage}
+                            />
+                            <Text style={styles.categoryCardText}>
+                                LivingRoom
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity >
+                            <Image 
+                                source={require('./../../../../res/Images/services.png')}
+                                style={styles.categoryCardImage}
+                            />
+                            <Text style={styles.categoryCardText}>
+                                Service
+                            </Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
             <View style={{marginTop: 15}}>
-                <Text style={{fontSize: 17, color:'#12539c', fontWeight: 'bold', marginLeft: 20, marginBottom: 10}}>
+                <Text style={styles.trendingProductsHeader}>
                     Trending Products
                 </Text>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginLeft: 17}}>
                     <View style={{marginRight: 6}}>
                         <Image 
-                            source={require('./../../../../res/Images/office.jpeg')}
-                            style={{height: 100, width: 120, marginHorizontal: 5, marginHorizontal: 5}}
+                            source={require('./../../../../res/Images/Canon-EOS.jpg')}
+                            style={styles.trendingProductsImage}
                         />
-                        <Text style={{color:'#4c97ea', fontSize: 14, fontWeight:'bold', marginLeft: 7,  marginTop: 5}}>
-                            Drilling Table
+                        <Text style={styles.trendingProductsText}>
+                            Canon EOS
                         </Text>
-                        <Text style={{color:'#4c97ea', fontSize: 14, marginLeft: 7}}>
-                            XAF2,000/Month
+                        <Text style={styles.trendingProductPrice}>
+                            XAF50,000/Month
                         </Text>
                     </View>
                     <View style={{marginRight: 6}}>
                         <Image 
-                            source={require('./../../../../res/Images/office.jpeg')}
-                            style={{height: 100, width: 120, marginHorizontal: 5, marginHorizontal: 5}}
+                            source={require('./../../../../res/Images/guitar.jpg')}
+                            style={styles.trendingProductsImage}
                         />
-                        <Text style={{color:'#4c97ea', fontSize: 14, fontWeight:'bold', marginLeft: 7,  marginTop: 5}}>
-                            Drilling Table
+                        <Text style={styles.trendingProductsText}>
+                            Ibanez guitar
                         </Text>
-                        <Text style={{color:'#4c97ea', fontSize: 14, marginLeft: 7}}>
-                            XAF2,000/Month
+                        <Text style={styles.trendingProductPrice}>
+                            XAF2,000/day
                         </Text>
                     </View>
                     <View style={{marginRight: 6}}>
                         <Image 
-                            source={require('./../../../../res/Images/office.jpeg')}
-                            style={{height: 100, width: 120, marginHorizontal: 5, marginHorizontal: 5}}
+                            source={require('./../../../../res/Images/DJ.jpg')}
+                            style={styles.trendingProductsImage}
                         />
-                        <Text style={{color:'#4c97ea', fontSize: 14, fontWeight:'bold', marginLeft: 7,  marginTop: 5}}>
-                            Drilling Table
+                        <Text style={styles.trendingProductsText}>
+                            DJ Set
                         </Text>
-                        <Text style={{color:'#4c97ea', fontSize: 14, marginLeft: 7}}>
-                            XAF2,000/Month
+                        <Text style={styles.trendingProductPrice}>
+                            XAF60,000/day
                         </Text>
                     </View>
                     <View style={{marginRight: 6}}>
                         <Image 
-                            source={require('./../../../../res/Images/office.jpeg')}
-                            style={{height: 100, width: 120, marginHorizontal: 5, marginHorizontal: 5}}
+                            source={require('./../../../../res/Images/warehouse.jpeg')}
+                            style={styles.trendingProductsImage}
                         />
-                        <Text style={{color:'#4c97ea', fontSize: 14, fontWeight:'bold', marginLeft: 7,  marginTop: 5}}>
-                            Drilling Table
+                        <Text style={styles.trendingProductsText}>
+                            warehouse
                         </Text>
-                        <Text style={{color:'#4c97ea', fontSize: 14, marginLeft: 7}}>
-                            XAF2,000/Month
+                        <Text style={styles.trendingProductPrice}>
+                            XAF200,000/Month
                         </Text>
                     </View>
                     <View style={{marginRight: 6}}>
                         <Image 
-                            source={require('./../../../../res/Images/office.jpeg')}
-                            style={{height: 100, width: 120, marginHorizontal: 5, marginHorizontal: 5}}
+                            source={require('./../../../../res/Images/car.jpeg')}
+                            style={styles.trendingProductsImage}
                         />
-                        <Text style={{color:'#4c97ea', fontSize: 14, fontWeight:'bold', marginLeft: 7,  marginTop: 5}}>
-                            Drilling Table
+                        <Text style={styles.trendingProductsText}>
+                            Sports Car
                         </Text>
-                        <Text style={{color:'#4c97ea', fontSize: 14, marginLeft: 7}}>
+                        <Text style={styles.trendingProductPrice}>
                             XAF2,000/Month
                         </Text>
                     </View>
                 </ScrollView>
             </View>
             <View>
-                <Text style={{fontSize: 16, color:'#12539c', marginTop: 8, fontWeight: 'bold', marginLeft: 20}}>
+                <Text style={styles.recentViewHeader}>
                     Recently Viewed Products
                 </Text>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginVertical: 10, marginLeft: 19}}>
                     <Image
                         source={require('./../../../../res/Images/nature.jpeg')} 
-                        style={{width: 100, height: 80, marginHorizontal: 5}}
+                        style={styles.recentViewImage}
                     />
                     <Image
                         source={require('./../../../../res/Images/nature.jpeg')} 
-                        style={{width: 100, height: 80, marginHorizontal: 5}}
+                        style={styles.recentViewImage}
                     />
                     <Image
                         source={require('./../../../../res/Images/nature.jpeg')} 
-                        style={{width: 100, height: 80, marginHorizontal: 5}}
+                        style={styles.recentViewImage}
                     />
                     <Image
                         source={require('./../../../../res/Images/nature.jpeg')} 
-                        style={{width: 100, height: 80, marginHorizontal: 5}}
+                        style={styles.recentViewImage}
                     />
                     <Image
                         source={require('./../../../../res/Images/nature.jpeg')} 
-                        style={{width: 100, height: 80, marginHorizontal: 5}}
+                        style={styles.recentViewImage}
                     />
                 </ScrollView>
             </View>
