@@ -89,28 +89,79 @@ const profile = [
 	}
 ]; 
 
-const login = [
+const logins = [
 	{
 		id: 1,
 		image: require('./Images/back.jpeg'),
 		name: 'Music player',
 		about: 'Working in the mungo, I help my clients find apartments, studios in and around Mungo',
-		type: 'non_animated'
+		type: 'non_animated',
+		color: 'lightblue'
 	},
 	{
 		id: 2,
 		image: require('./Images/back.jpeg'),
 		name: 'Classic home',
 		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
-		type: 'animated'
+		type: 'animated',
+		color: 'brown'
 	},
 	{
 		id: 3,
 		image: require('./Images/back.jpeg'),
 		name: 'Designed home',
 	    about: 'Jakata Real estate consultancy is a registered real estate firm providing property listing service to clients across Africa.',
-		type: 'animated'
-	}
+		type: 'animated',
+		color: 'red'
+	},
+	{
+		id: 4,
+		image: require('./Images/back.jpeg'),
+		name: 'Classic home',
+		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
+		type: 'animated',
+		color: 'brown'
+	},
+	{
+		id: 5,
+		image: require('./Images/back.jpeg'),
+		name: 'Designed home',
+	    about: 'Jakata Real estate consultancy is a registered real estate firm providing property listing service to clients across Africa.',
+		type: 'animated',
+		color: 'red'
+	},
+	{
+		id: 6,
+		image: require('./Images/back.jpeg'),
+		name: 'Classic home',
+		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
+		type: 'animated',
+		color: 'brown'
+	},
+	{
+		id: 7,
+		image: require('./Images/back.jpeg'),
+		name: 'Designed home',
+	    about: 'Jakata Real estate consultancy is a registered real estate firm providing property listing service to clients across Africa.',
+		type: 'animated',
+		color: 'red'
+	},
+	{
+		id: 8,
+		image: require('./Images/back.jpeg'),
+		name: 'Classic home',
+		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
+		type: 'animated',
+		color: 'brown'
+	},
+	{
+		id: 9,
+		image: require('./Images/back.jpeg'),
+		name: 'Designed home',
+	    about: 'Jakata Real estate consultancy is a registered real estate firm providing property listing service to clients across Africa.',
+		type: 'animated',
+		color: 'red'
+	},
 ]; 
 
 const setting = [
@@ -146,6 +197,6 @@ const setting = [
 export {
     homes,
     profile,
-    login,
+    logins,
     setting,
 }
