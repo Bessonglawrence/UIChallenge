@@ -20,7 +20,7 @@ const TabIcon = ({title, focused, selected}) => {
 
     if ( title == "Settings" ) {
         iconName = "settings"
-    } 
+    }
 
     return (
         <Icon

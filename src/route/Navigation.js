@@ -21,7 +21,7 @@ class Navigation extends Component {
         return (
             <Router>
                 <Stack key="root">
-                <Scene key="rentflicker" component={ RentFlicker } title="Rent Flicker" hideNavBar />
+                <Scene key="rentflicker" component={ RentFlicker } hideNavBar />
                     <Scene 
                         key="home"
                         tabs
