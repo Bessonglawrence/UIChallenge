@@ -8,33 +8,35 @@ const styles = {
         shadowRadius: 10,
         elevation: 5,
         marginVertical: 15,
-        borderRadius: 10
+        borderRadius: 10,
+        marginHorizontal: 10
     },
     image:{
-        height: 150, 
-        width: 100, 
+        height: 190, 
+        width: 140, 
         padding: 10,
         borderRadius: 10,
     },
     mainTextView:{
         flexDirection: 'row', 
-        marginTop: 120
+        marginTop: 130,
+        marginLeft: -8
     },
     ratingView:{ 
-        paddingVertical: 10, 
-        paddingHorizontal: 18, 
-        borderRadius: 60,
+        paddingVertical: 6, 
+        paddingHorizontal: 17, 
+        borderRadius: 80,
     },
     rating:{
         color: 'grey', 
-        fontSize: 18, 
+        fontSize: 15, 
         fontWeight: 'bold', 
         fontStyle: 'italic'
     },
     name: {
         marginLeft: 5, 
         marginTop: 8, 
-        fontSize: 18, 
+        fontSize: 12, 
         fontWeight: 'bold',
     }
 

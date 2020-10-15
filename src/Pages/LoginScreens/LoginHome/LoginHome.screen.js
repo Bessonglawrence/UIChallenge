@@ -28,6 +28,7 @@ class LoginHome extends Component {
             <FlatList
                 contentContainerStyle={styles.mainContainer}
                 onScrollEndDrag={this.scrollEnded}
+                numColumns={2}
                 data={logins}
                 renderItem={({ item, index }) => { 
                     {

@@ -164,25 +164,25 @@ const RentFlicker = () => {
                     </View>
                 </ScrollView>
             </View>
-            <View>
+            <View style={{marginBottom: 10}}>
                 <Text style={styles.recentViewHeader}>
                     Recently Viewed Products
                 </Text>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginVertical: 10, marginLeft: 19}}>
                     <Image
-                        source={require('./../../../../res/Images/nature.jpeg')} 
+                        source={require('./../../../../res/Images/DJ.jpg')} 
                         style={styles.recentViewImage}
                     />
                     <Image
-                        source={require('./../../../../res/Images/nature.jpeg')} 
+                        source={require('./../../../../res/Images/car.jpeg')} 
                         style={styles.recentViewImage}
                     />
                     <Image
-                        source={require('./../../../../res/Images/nature.jpeg')} 
+                        source={require('./../../../../res/Images/warehouse.jpeg')} 
                         style={styles.recentViewImage}
                     />
                     <Image
-                        source={require('./../../../../res/Images/nature.jpeg')} 
+                        source={require('./../../../../res/Images/Canon-EOS.jpg')} 
                         style={styles.recentViewImage}
                     />
                     <Image
