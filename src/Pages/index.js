@@ -1,5 +1,5 @@
 import { AppHome, RentFlicker} from './HomeScreens';
-import {LoginHome} from './LoginScreens';
+import {LoginHome, MiniLogin} from './LoginScreens';
 import RegisterScreens from './RegisterScreens';
 import SplashScreens from './SplashScreens';
 import Example from './Example/Example.page'
@@ -9,6 +9,7 @@ export {
     Example,
     RentFlicker,
     LoginHome,
+    MiniLogin,
     RegisterScreens,
     SplashScreens
 }

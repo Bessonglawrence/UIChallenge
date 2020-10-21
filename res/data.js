@@ -93,7 +93,7 @@ const logins = [
 	{
 		id: 1,
 		image: require('./Images/back.jpeg'),
-		name: 'Music player',
+		name: 'Mini Login',
 		about: 'Working in the mungo, I help my clients find apartments, studios in and around Mungo',
 		type: 'non_animated',
 		color: 'lightblue'

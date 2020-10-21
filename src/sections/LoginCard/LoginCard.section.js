@@ -12,7 +12,7 @@ class LoginCard extends Component {
                 <TouchableOpacity onPress={() => {
                     switch(login.id){
                         case 1:
-                            Actions.rentflicker();
+                            Actions.minilogin();
                             break;
                 }}}>
                     <ImageBackground
