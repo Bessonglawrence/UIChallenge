@@ -92,7 +92,7 @@ const profile = [
 const logins = [
 	{
 		id: 1,
-		image: require('./Images/back.jpeg'),
+		image: require('./Images/styledLogin.png'),
 		name: 'Mini Login',
 		about: 'Working in the mungo, I help my clients find apartments, studios in and around Mungo',
 		type: 'non_animated',

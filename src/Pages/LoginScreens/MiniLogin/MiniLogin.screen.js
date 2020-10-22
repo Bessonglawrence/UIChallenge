@@ -143,9 +143,10 @@ const styles = StyleSheet.create({
 		alignItems: 'center', 
 		marginTop: 20, 
 		width:'90%', 
-		borderTopLeftRadius: 80, 
-		borderBottomLeftRadius: 40, 
-		marginLeft: 20,
+		borderTopLeftRadius: 120, 
+		borderBottomLeftRadius: 60,
+		borderTopRightRadius: 120, 
+		marginLeft: 15,
 		position: 'absolute',
 		bottom: 7,
 
