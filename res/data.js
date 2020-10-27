@@ -1,7 +1,7 @@
  const homes = [
 	{
 		id: 1,
-		image: require('./Images/rentflicker.png'),
+		image: require('./Images/flickerRent.png'),
 		name: 'Music player',
 		about: 'Working in the mungo, I help my clients find apartments, studios in and around Mungo',
         type: 'non_animated',
@@ -11,12 +11,12 @@
 	},
 	{
 		id: 2,
-		image: require('./Images/back.jpeg'),
-		name: 'Classic home',
+		image: require('./Images/socialApp.png'),
+		name: 'Social App',
 		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
 		type: 'animated',
-		rating: 3,
-		color: 'purple',
+		rating: 1,
+		color: '#44bd32',
 	},
 	{
 		id: 3,

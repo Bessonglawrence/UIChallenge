@@ -14,6 +14,8 @@ class HomeCard extends Component {
                         case 1:
                             Actions.rentflicker();
                             break;
+                        case 2:
+                            Actions.socialapp();
                 }}}>
                     <ImageBackground
                     source = {home.image}

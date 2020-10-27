@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet,TouchableOpacity, TextInput} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/Feather'
-import styles from './RoundLogin.style'
+import styles from './RoundRegister.style'
 
-export default class RoundLogin extends Component {
+export default class RoundRegister extends Component {
 
     render(){
         return(
@@ -14,10 +14,17 @@ export default class RoundLogin extends Component {
                 </View>
 
                 <Text style={styles.loginText}>
-                    Login
+                    Register
                 </Text>
 
                 <View style={styles.inputView}>
+                    <View style={styles.topInput}>
+                        <Icon name="user" size={25} color="purple" style={{marginTop: 10, marginLeft: 15}} />
+                        <TextInput
+                            placeholder="john doe" 
+                            style={{marginLeft: 10}}
+                        />
+                    </View>
                     <View style={styles.topInput}>
                         <Icon name="mail" size={25} color="purple" style={{marginTop: 10, marginLeft: 15}} />
                         <TextInput
@@ -37,9 +44,9 @@ export default class RoundLogin extends Component {
                     <Icon name="arrow-right" color="white" size={24}/>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.registerView}>
-                    <Text style={styles.registerText} onPress={() => Actions.roundregister()}>
-                        Register
+                <TouchableOpacity style={styles.registerView} onPress={() => Actions.roundLogin()}>
+                    <Text style={styles.registerText}>
+                        Login
                     </Text>
                 </TouchableOpacity>
 
