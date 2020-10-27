@@ -14,6 +14,8 @@ class LoginCard extends Component {
                         case 1:
                             Actions.minilogin();
                             break;
+                        case 2:
+                            Actions.roundLogin();
                 }}}>
                     <ImageBackground
                     source = {login.image}
@@ -23,7 +25,7 @@ class LoginCard extends Component {
                         <View style={styles.mainTextView}>
                             <View style={[{backgroundColor: login.color},styles.ratingView]}>
                                 <Text style={styles.rating}>
-                                    {login.rating}
+                                    {login.id}
                                 </Text>
                             </View>
                             <Text style={styles.name}>

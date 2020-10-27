@@ -28,15 +28,15 @@ const styles = {
         borderRadius: 80,
     },
     rating:{
-        color: 'grey', 
-        fontSize: 15, 
-        fontWeight: 'bold', 
+        color: 'white', 
+        fontSize: 14, 
+        paddingVertical: 5, 
         fontStyle: 'italic'
     },
     name: {
         marginLeft: 5, 
         marginTop: 8, 
-        fontSize: 12, 
+        fontSize: 11, 
         fontWeight: 'bold',
     }
 

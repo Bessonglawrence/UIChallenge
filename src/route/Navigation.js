@@ -6,6 +6,7 @@ import {
     Example, 
     RentFlicker,
     MiniLogin,
+    RoundLogin,
     SplashScreens,
     ProfileScreens,
     LoginHome,
@@ -23,7 +24,8 @@ class Navigation extends Component {
             <Router>
                 <Stack key="root">
                 <Scene key="rentflicker" component={ RentFlicker } hideNavBar />
-                <Scene key="minilogin" component={ MiniLogin } initial hideNavBar />
+                <Scene key="minilogin" component={ MiniLogin } hideNavBar />
+                <Scene key="roundLogin" component={ RoundLogin } hideNavBar/>
                     <Scene 
                         key="home"
                         tabs
@@ -33,6 +35,7 @@ class Navigation extends Component {
                         hideTabBar={ false }
                         hideNavBar={ true }
                         labelStyle={ { fontWeight: 'bold', } }
+                        initial
                     >
                         <Scene key="home" component={ AppHome } title="Homes" icon={ TabIcon }/> 
                         <Scene key="profile" component={ Example } title="Profiles" icon={ TabIcon } hideNavBar />

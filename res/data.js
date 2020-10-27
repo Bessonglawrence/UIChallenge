@@ -92,19 +92,19 @@ const profile = [
 const logins = [
 	{
 		id: 1,
-		image: require('./Images/styledLogin.png'),
+		image: require('./Images/mini.png'),
 		name: 'Mini Login',
 		about: 'Working in the mungo, I help my clients find apartments, studios in and around Mungo',
 		type: 'non_animated',
-		color: 'lightblue'
+		color: 'brown'
 	},
 	{
 		id: 2,
-		image: require('./Images/back.jpeg'),
-		name: 'Classic home',
+		image: require('./Images/rounded.png'),
+		name: 'Round Login',
 		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
 		type: 'animated',
-		color: 'brown'
+		color: 'purple'
 	},
 	{
 		id: 3,
