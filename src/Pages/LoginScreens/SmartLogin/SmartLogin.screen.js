@@ -1,11 +1,27 @@
 import React from 'react';
-import { View , Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
+import { 
+    View, 
+    Text, 
+    TextInput, 
+    StyleSheet, 
+    TouchableOpacity 
+} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 //import styles from './SmartLogin.style'
 
 const SmartLogin = () => {
     return (
         <View style={{flex: 1, backgroundColor: 'white', alignItems: 'center'}}>
             <View style={{backgroundColor: '#1934e6', height: 430, width: '100%', borderBottomLeftRadius: 65, borderBottomRightRadius: 65}}>
+                <Icon
+                    name="bento" 
+                    color="white"
+                    size={100} 
+                    style={{alignSelf: 'center', marginTop: 25}}
+                />
+                <Text style={{color: 'white', fontSize: 18, alignSelf: 'center'}}>
+                    Fill the below information to login
+                </Text>
                 <View style={styles.inputContainer}>
                     <Text style={{alignSelf: 'center', marginVertical: 15, fontSize: 18, color: '#187ae7', fontWeight: 'bold'}}>
                         Login Account
@@ -41,6 +57,16 @@ const SmartLogin = () => {
                         </TouchableOpacity>
                     </View>
                 </View>
+                <View style={{alignSelf: 'center', top: 563, position: 'absolute'}}>
+                    <Text style={{fontSize: 16, alignSelf: 'center'}}>
+                        Don't have an Account ?
+                    </Text>
+                    <TouchableOpacity>
+                        <Text style={{alignSelf: 'center', color: '#187ae7', fontWeight: 'bold', fontSize: 18, textDecorationLine: 'underline'}}>
+                            REGISTER
+                        </Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </View>
     );
@@ -55,7 +81,7 @@ const styles =  StyleSheet.create({
         width: 270, 
         position: 'absolute',  
         left: 48, 
-        top: 150,
+        top: 145,
         borderColor: 'lightgrey',
         shadowColor: 'grey',
         shadowOffset: { width: 2, height: 5 },
