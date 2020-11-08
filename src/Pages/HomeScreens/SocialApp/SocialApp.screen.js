@@ -62,6 +62,7 @@ class SocialApp extends Component {
 					</View>
 				</View>
 
+				<View style={{paddingBottom: 12}}>
 						<Text style={styles.subHeader}>
 							Categories
 						</Text>
@@ -90,6 +91,7 @@ class SocialApp extends Component {
 								<Text style={styles.cardText}>chat</Text>
 							</TouchableOpacity>
 						</View>
+					</View>
 			</View>
 			);
 	}

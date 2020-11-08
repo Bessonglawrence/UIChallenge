@@ -2,7 +2,7 @@ const styles = {
     container:{
 		flex:1,
         backgroundColor: '#dcdde1'/*'#f5f6fa'*/,
-        paddingBottom: 40
+        paddingBottom: 20
 	}, 
 	buttonView:{
 		flexDirection: 'row'

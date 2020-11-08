@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View, Text,TouchableOpacity, ImageBackground, Image} from 'react-native';
+import {View, Text,TouchableOpacity, ImageBackground, Image, ActionSheetIOS} from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import styles from './LoginCard.style';
 
@@ -16,6 +16,8 @@ class LoginCard extends Component {
                             break;
                         case 2:
                             Actions.roundLogin();
+                        case 3:
+                            Actions.smartlogin();
                 }}}>
                     <ImageBackground
                     source = {login.image}

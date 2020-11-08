@@ -8,6 +8,7 @@ import {
     SocialApp,
     MiniLogin,
     RoundLogin,
+    SmartLogin,
     SplashScreens,
     ProfileScreens,
     LoginHome,
@@ -28,6 +29,7 @@ class Navigation extends Component {
                 <Scene key="rentflicker" component={ RentFlicker } hideNavBar />
                 <Scene key="minilogin" component={ MiniLogin } hideNavBar />
                 <Scene key="roundLogin" component={ RoundLogin } hideNavBar/>
+                <Scene key="smartlogin" component={ SmartLogin } hideNavBar />
                 <Scene key="roundregister" component={ RoundRegister } hideNavBar />
                 <Scene key="socialapp" component={ SocialApp } hideNavBar />
                     <Scene 
