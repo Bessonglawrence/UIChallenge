@@ -40,7 +40,7 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
-        bottom: 263,
+        bottom: 278,
         left: 269,
         shadowColor: 'purple',
         shadowOffset: { width: 5, height: 5 },
