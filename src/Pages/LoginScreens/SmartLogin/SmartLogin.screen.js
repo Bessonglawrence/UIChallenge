@@ -4,14 +4,15 @@ import {
     Text, 
     TextInput, 
     StyleSheet, 
-    TouchableOpacity 
+    TouchableOpacity,
+    ScrollView
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import styles from './SmartLogin.style'
 
 const SmartLogin = () => {
     return (
-        <View style={{flex: 1, backgroundColor: 'white', alignItems: 'center'}}>
+        <ScrollView contentContainerStyle={{flex: 1, backgroundColor: 'white', alignItems: 'center'}}>
             <View style={styles.icon}>
                 <Icon
                     name="bento" 
@@ -68,7 +69,7 @@ const SmartLogin = () => {
                     </TouchableOpacity>
                 </View>
             </View>
-        </View>
+        </ScrollView>
     );
 }
 

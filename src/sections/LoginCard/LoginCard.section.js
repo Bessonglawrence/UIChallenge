@@ -16,8 +16,13 @@ class LoginCard extends Component {
                             break;
                         case 2:
                             Actions.roundLogin();
+                            break;
                         case 3:
                             Actions.smartlogin();
+                            break;
+                        case 4:
+                            Actions.blacklogin();
+                            break;
                 }}}>
                     <ImageBackground
                     source = {login.image}
