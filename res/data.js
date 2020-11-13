@@ -116,11 +116,11 @@ const logins = [
 	},
 	{
 		id: 4,
-		image: require('./Images/back.jpeg'),
+		image: require('./Images/BlackLogin.png'),
 		name: 'Black Login',
 		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
 		type: 'animated',
-		color: 'black'
+		color: '#14a9ba'
 	},
 	{
 		id: 5,

@@ -20,7 +20,7 @@ const styles = {
     containerStyle: {
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'lightblue',
+        backgroundColor: '#14a9ba',
         paddingHorizontal: 15,
         paddingVertical: 10,
         marginHorizontal: 15,

@@ -19,8 +19,8 @@ class Input extends Component {
 
     // function to show password icon when unlocked or locked 
     renderIcon() {
-        const passwordunlocked = <Icon name={this.props.passwordiconunlocked} size={30} color='lightblue'/*'#a6a6a6'*//>
-        const passwordlocked = <Icon name={this.props.passwordiconlocked} size={30} color='lightblue'/*'#a6a6a6'*//>
+        const passwordunlocked = <Icon name={this.props.passwordiconunlocked} size={30} color='#14a9ba'/*'#a6a6a6'*//>
+        const passwordlocked = <Icon name={this.props.passwordiconlocked} size={30} color='#14a9ba'/*'#a6a6a6'*//>
 
         if(this.state.showpasswordicon == true ){
             return <Text>{passwordunlocked}</Text>
@@ -44,7 +44,7 @@ class Input extends Component {
         const { lable, value, onChangeText, placeholder, secureTextEntry, icon } = this.props;
 
         // icon for the field inputs
-        const myicon = <Icon   name={icon} size={20} color={this.state.isFocused ?  'black' :  'lightblue' } />
+        const myicon = <Icon   name={icon} size={20} color={this.state.isFocused ?  'black' :  '#14a9ba' } />
 
         return (
             <View
@@ -112,7 +112,7 @@ const styles = {
     lableStyle: {
         fontSize: 18,
         paddingLeft: 7,
-        color: '#a6a6a6',
+        color: '#14a9ba',
     },
     containerStyle: {
         alignItems: 'center',
