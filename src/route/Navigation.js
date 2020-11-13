@@ -15,6 +15,7 @@ import {
     LoginHome,
     RegisterScreens,
     RoundRegister,
+    BlackRegister,
     SettingScreens,
 } from './../Pages';
 import {
@@ -33,6 +34,7 @@ class Navigation extends Component {
                 <Scene key="smartlogin" component={ SmartLogin } hideNavBar />
                 <Scene key="blacklogin" component={ BlackLogin } hideNavBar />
                 <Scene key="roundregister" component={ RoundRegister } hideNavBar />
+                <Scene key="blackregister" component={ BlackRegister } hideNavBar />
                 <Scene key="socialapp" component={ SocialApp } hideNavBar />
                     <Scene 
                         key="home"

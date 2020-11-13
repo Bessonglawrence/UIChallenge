@@ -4,29 +4,29 @@ import Input from './../../../components/Input/Input.component';
 import ButtonComponent from './../../../components/Button/Button.component';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Actions } from 'react-native-router-flux';
-//import styles from './BlackLogin.style'\
+//import styles from './BlackRegister.style'\
 
 const onButtonPress = () => {
     Actions.pop()
 }
 
-class BlackLogin extends Component {
+class BlackRegister extends Component {
 
     render(){
         return (
-            <ScrollView contentContainerStyle={{flex: 1, backgroundColor: 'white', justifyContent:'center', paddingHorizontal: 15, paddingVertical: 30,}}>
+            <ScrollView contentContainerStyle={{flex: 1, backgroundColor: 'white', justifyContent:'center', paddingHorizontal: 15, paddingVertical: 50}}>
                 <Icon
                     name="download"
                     color="#1297a6"
                     size={90}
                     style={{alignSelf: 'center'}} 
                 />
-                <View style={{marginLeft: 13, marginBottom: 9}}>
+                <View style={{marginLeft: 13}}>
                     <Text style={{fontSize: 30, color: 'grey'}}>
-                        Welcome back,
+                        Welcome,
                     </Text>
                     <Text style={{fontSize: 16, color: 'grey'}}>
-                        Sign in to Continue
+                        Create an Account to continue
                     </Text>
                 </View>
                <Input 
@@ -42,32 +42,34 @@ class BlackLogin extends Component {
                     passwordiconlocked="eye-outline"
                     passwordiconunlocked="eye-off-outline"
                />
-               <View style={{flexDirection: 'row'}}>
+               <Input 
+                    secureTextEntry
+                    lable="Confirm Password"
+                    placeholder="Confirm password ..."
+                    icon="lock"
+                    passwordiconlocked="eye-outline"
+                    passwordiconunlocked="eye-off-outline"
+               />
                    <View style={{flexDirection: 'row'}}>
                         <CheckBox />
-                        <Text style={{fontSize: 15, marginTop: 3, color: 'grey'}}>Remember me</Text>
+                        <Text style={{fontSize: 15, marginTop: 4, color: 'grey'}}>Remember me</Text>
                    </View>
-                   <Text style={{marginLeft: 51, marginTop: 2, fontSize: 16, color: '#14a9ba'}}>Forgot Password?</Text>
-               </View>
                <ButtonComponent>
                    <Text style={{color: 'white', fontSize: 20}} onPress={onButtonPress}>
-                       Sign In
+                       Register
                    </Text>
                 </ButtonComponent>
-                <Text style={{color: 'grey', fontSize: 16, alignSelf: 'center', marginVertical: 5}}>
-                    Don't have an Account yet?
+                <Text style={{color: 'grey', fontSize: 16, alignSelf: 'center', marginBottom: 2}}>
+                    Have an Account Already?
                 </Text>
-                <View style={{borderColor: '#14a9ba', borderWidth: 1, borderRadius: 3, alignSelf: 'center', alignItems: 'center', justifyContent: 'center', height: 47, width: '92%', marginVertical: 10}}>
-                    <Text style={{color: '#14a9ba', fontSize: 18}} onPress={() => Actions.blackregister()} >
-                        Create Account
+                <View style={{borderColor: '#14a9ba', borderWidth: 1, borderRadius: 3, alignSelf: 'center', alignItems: 'center', justifyContent: 'center', height: 47, width: '92%'}}>
+                    <Text style={{color: '#14a9ba', fontSize: 18}} onPress={onButtonPress} >
+                        Sign In
                     </Text>
                 </View>
-                <Text style={{fontSize: 18, textDecorationLine: 'underline', alignSelf: 'center', }}>
-                    Terms and Conditions
-                </Text>
             </ScrollView>
         );
     }
 }
 
-export default BlackLogin;
+export default BlackRegister;

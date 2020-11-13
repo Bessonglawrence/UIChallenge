@@ -1,6 +1,6 @@
 import { AppHome, RentFlicker, SocialApp } from './HomeScreens';
 import { LoginHome, MiniLogin, RoundLogin, SmartLogin, BlackLogin} from './LoginScreens';
-import { RoundRegister } from './RegisterScreens';
+import { RoundRegister, BlackRegister } from './RegisterScreens';
 import SplashScreens from './SplashScreens';
 import Example from './Example/Example.page'
 
@@ -15,5 +15,6 @@ export {
     SmartLogin,
     BlackLogin,
     RoundRegister,
+    BlackRegister,
     SplashScreens
 }
