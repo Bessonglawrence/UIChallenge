@@ -17,6 +17,8 @@ import {
     RoundRegister,
     BlackRegister,
     SettingScreens,
+    ProfileHome,
+    PlainProfile,
 } from './../Pages';
 import {
     TabIcon 
@@ -36,6 +38,7 @@ class Navigation extends Component {
                 <Scene key="roundregister" component={ RoundRegister } hideNavBar />
                 <Scene key="blackregister" component={ BlackRegister } hideNavBar />
                 <Scene key="socialapp" component={ SocialApp } hideNavBar />
+                <Scene key="plainprofile" component={ PlainProfile } hideNavBar />
                     <Scene 
                         key="home"
                         tabs
@@ -48,7 +51,7 @@ class Navigation extends Component {
                         initial
                     >
                         <Scene key="home" component={ AppHome } title="Homes" icon={ TabIcon }/> 
-                        <Scene key="profile" component={ Example } title="Profiles" icon={ TabIcon } hideNavBar />
+                        <Scene key="profile" component={ ProfileHome } title="Profiles" icon={ TabIcon } hideNavBar />
                         <Scene key="login" component={ LoginHome } title="Logins" icon={ TabIcon } hideNavBar />
                         <Scene key="settings" component={ Example } title="Settings" icon={ TabIcon } hideNavBar />
                     </Scene>

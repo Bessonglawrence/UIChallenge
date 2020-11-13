@@ -65,28 +65,49 @@
 	},
 ];  
 
-const profile = [
+const profiles = [
 	{
 		id: 1,
-		image: require('./Images/back.jpeg'),
-		name: 'Music player',
+		image: require('./Images/plain.jpeg'),
+		name: 'Plain profile',
 		about: 'Working in the mungo, I help my clients find apartments, studios in and around Mungo',
-		type: 'non_animated'
+		type: 'non_animated',
 	},
 	{
 		id: 2,
 		image: require('./Images/back.jpeg'),
-		name: 'Classic home',
+		name: 'Classic profile',
 		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
 		type: 'animated'
 	},
 	{
 		id: 3,
 		image: require('./Images/back.jpeg'),
-		name: 'Designed home',
+		name: 'Designed profile',
 	    about: 'Jakata Real estate consultancy is a registered real estate firm providing property listing service to clients across Africa.',
 		type: 'animated'
-	}
+	},
+	{
+		id: 4,
+		image: require('./Images/back.jpeg'),
+		name: 'Music profile',
+		about: 'Working in the mungo, I help my clients find apartments, studios in and around Mungo',
+		type: 'non_animated'
+	},
+	{
+		id: 5,
+		image: require('./Images/back.jpeg'),
+		name: 'Classic profile',
+		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
+		type: 'animated'
+	},
+	{
+		id: 6,
+		image: require('./Images/back.jpeg'),
+		name: 'Designed profile',
+	    about: 'Jakata Real estate consultancy is a registered real estate firm providing property listing service to clients across Africa.',
+		type: 'animated'
+	},
 ]; 
 
 const logins = [
@@ -196,7 +217,7 @@ const setting = [
 
 export {
     homes,
-    profile,
+    profiles,
     logins,
     setting,
 }
