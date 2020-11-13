@@ -4,7 +4,7 @@ import Input from './../../../components/Input/Input.component';
 import ButtonComponent from './../../../components/Button/Button.component';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Actions } from 'react-native-router-flux';
-//import styles from './BlackLogin.style'\
+import styles from './BlackLogin.style';
 
 const onButtonPress = () => {
     Actions.pop()
@@ -14,18 +14,18 @@ class BlackLogin extends Component {
 
     render(){
         return (
-            <ScrollView contentContainerStyle={{flex: 1, backgroundColor: 'white', justifyContent:'center', paddingHorizontal: 15, paddingVertical: 30,}}>
+            <ScrollView contentContainerStyle={styles.mainContainer}>
                 <Icon
                     name="download"
                     color="#1297a6"
                     size={90}
                     style={{alignSelf: 'center'}} 
                 />
-                <View style={{marginLeft: 13, marginBottom: 9}}>
-                    <Text style={{fontSize: 30, color: 'grey'}}>
+                <View style={styles.headerView}>
+                    <Text style={styles.headerText}>
                         Welcome back,
                     </Text>
-                    <Text style={{fontSize: 16, color: 'grey'}}>
+                    <Text style={styles.subHeaderText}>
                         Sign in to Continue
                     </Text>
                 </View>
@@ -42,27 +42,27 @@ class BlackLogin extends Component {
                     passwordiconlocked="eye-outline"
                     passwordiconunlocked="eye-off-outline"
                />
-               <View style={{flexDirection: 'row'}}>
-                   <View style={{flexDirection: 'row'}}>
+               <View style={styles.checkView}>
+                   <View style={styles.checkBoxView}>
                         <CheckBox />
-                        <Text style={{fontSize: 15, marginTop: 3, color: 'grey'}}>Remember me</Text>
+                        <Text style={styles.rememberText}>Remember me</Text>
                    </View>
-                   <Text style={{marginLeft: 51, marginTop: 2, fontSize: 16, color: '#14a9ba'}}>Forgot Password?</Text>
+                   <Text style={styles.forgotPassword}>Forgot Password?</Text>
                </View>
                <ButtonComponent>
-                   <Text style={{color: 'white', fontSize: 20}} onPress={onButtonPress}>
+                   <Text style={styles.signIn} onPress={onButtonPress}>
                        Sign In
                    </Text>
                 </ButtonComponent>
-                <Text style={{color: 'grey', fontSize: 16, alignSelf: 'center', marginVertical: 5}}>
+                <Text style={styles.accountYet}>
                     Don't have an Account yet?
                 </Text>
-                <View style={{borderColor: '#14a9ba', borderWidth: 1, borderRadius: 3, alignSelf: 'center', alignItems: 'center', justifyContent: 'center', height: 47, width: '92%', marginVertical: 10}}>
-                    <Text style={{color: '#14a9ba', fontSize: 18}} onPress={() => Actions.blackregister()} >
+                <View style={styles.createButton}>
+                    <Text style={styles.createText} onPress={() => Actions.blackregister()} >
                         Create Account
                     </Text>
                 </View>
-                <Text style={{fontSize: 18, textDecorationLine: 'underline', alignSelf: 'center', }}>
+                <Text style={styles.terms}>
                     Terms and Conditions
                 </Text>
             </ScrollView>
