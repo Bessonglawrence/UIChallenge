@@ -2,9 +2,9 @@ const styles = {
     mainContainer:{
         flex: 1, 
         backgroundColor: 'white', 
-        justifyContent:'center', 
+        //justifyContent:'center', 
         paddingHorizontal: 15, 
-        paddingVertical: 30,
+        //paddingVertical: 30,
     },
     headerView:{
         marginLeft: 13, 

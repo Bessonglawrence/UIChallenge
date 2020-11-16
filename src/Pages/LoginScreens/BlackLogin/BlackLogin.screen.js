@@ -14,7 +14,7 @@ class BlackLogin extends Component {
 
     render(){
         return (
-            <ScrollView contentContainerStyle={styles.mainContainer}>
+            <View contentContainerStyle={styles.mainContainer}>
                 <Icon
                     name="download"
                     color="#1297a6"
@@ -65,7 +65,7 @@ class BlackLogin extends Component {
                 <Text style={styles.terms}>
                     Terms and Conditions
                 </Text>
-            </ScrollView>
+            </View>
         );
     }
 }

@@ -14,11 +14,11 @@ class BlackRegister extends Component {
 
     render(){
         return (
-            <ScrollView contentContainerStyle={{flex: 1, backgroundColor: 'white', justifyContent:'center', paddingHorizontal: 15, paddingVertical: 50}}>
+            <View style={{flex: 1, backgroundColor: 'white', paddingHorizontal: 15,}}>
                 <Icon
                     name="download"
                     color="#1297a6"
-                    size={90}
+                    size={50}
                     style={{alignSelf: 'center'}} 
                 />
                 <View style={{marginLeft: 13}}>
@@ -67,7 +67,7 @@ class BlackRegister extends Component {
                         Sign In
                     </Text>
                 </View>
-            </ScrollView>
+            </View>
         );
     }
 }
