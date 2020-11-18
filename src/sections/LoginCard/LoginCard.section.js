@@ -23,6 +23,9 @@ class LoginCard extends Component {
                         case 4:
                             Actions.blacklogin();
                             break;
+                        case 5:
+                            Actions.tablogin();
+                            break;
                 }}}>
                     <ImageBackground
                     source = {login.image}

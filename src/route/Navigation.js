@@ -10,6 +10,7 @@ import {
     RoundLogin,
     SmartLogin,
     BlackLogin,
+    TabLogin,
     SplashScreens,
     ProfileScreens,
     LoginHome,
@@ -39,6 +40,7 @@ class Navigation extends Component {
                 <Scene key="blackregister" component={ BlackRegister } hideNavBar />
                 <Scene key="socialapp" component={ SocialApp } hideNavBar />
                 <Scene key="plainprofile" component={ PlainProfile } hideNavBar />
+                <Scene key="tablogin" component={ TabLogin } hideNavBar />
                     <Scene 
                         key="home"
                         tabs

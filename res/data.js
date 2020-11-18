@@ -145,11 +145,11 @@ const logins = [
 	},
 	{
 		id: 5,
-		image: require('./Images/back.jpeg'),
-		name: 'Designed home',
+		image: require('./Images/tabLogin.png'),
+		name: 'Tab Login',
 	    about: 'Jakata Real estate consultancy is a registered real estate firm providing property listing service to clients across Africa.',
 		type: 'animated',
-		color: 'red'
+		color: '#8378ed'
 	},
 	{
 		id: 6,
