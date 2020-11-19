@@ -1,17 +1,102 @@
 import * as React from 'react';
-import { View, Text, Dimensions, ImageBackground } from 'react-native';
+import { View, Text, Dimensions, ImageBackground, TextInput, ScrollView } from 'react-native';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
+// import ButtonComponent from './../../../components/Button/Button.component';
 import styles from './TabLogin.style';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
-const FirstRoute = () => (
-    <View style={[styles.mainContainer, { backgroundColor: 'rgba(0,0,0,0.7)'}]} />
+const signIn = () => (
+    <ScrollView style={styles.mainContainer}>
+        <View style={styles.inputView}>
+            <Icon
+                name="account-circle"
+                size={27}
+                color="white" 
+                style={{marginTop: 5, marginRight: 8}}
+            />
+            <TextInput
+                placeholder="Username"
+                placeholderTextColor="white"
+                style={{color:"white", fontSize: 18}}
+            />
+        </View>
+        <View style={styles.inputView}>
+            <Icon
+                name="lock"
+                size={27}
+                color="white" 
+                style={{marginTop: 5, marginRight: 8}}
+            />
+            <TextInput
+                placeholder="Password"
+                placeholderTextColor="white"
+                style={{color:"white", fontSize: 18}}
+            />
+        </View>
+        <View style={{marginTop: 105}}>
+            <View style={styles.buttonStyle}>
+                <Text style={{fontSize: 18, color:'white'}}>
+                    SIGN IN
+                </Text>
+            </View>
+            <Text style={styles.forgotText}>
+                    Forgot Password
+            </Text>
+        </View>
+    </ScrollView>
   );
    
-const SecondRoute = () => (
-    <View style={[styles.mainContainer, { backgroundColor: 'rgba(0,0,0,0.7)'}]}> 
-        
-    </View>
+const signUp = () => (
+    <ScrollView style={styles.mainContainer}>
+        <View style={styles.inputView}>
+            <Icon
+                name="account-circle"
+                size={27}
+                color="white" 
+                style={{marginTop: 5, marginRight: 8}}
+            />
+            <TextInput
+                placeholder="Username"
+                placeholderTextColor="white"
+                style={{color:"white", fontSize: 18}}
+            />
+        </View>
+        <View style={styles.inputView}>
+            <Icon
+                name="lock"
+                size={27}
+                color="white" 
+                style={{marginTop: 5, marginRight: 8}}
+            />
+            <TextInput
+                placeholder="Password"
+                placeholderTextColor="white"
+                style={{color:"white", fontSize: 18}}
+            />
+        </View>
+
+        <View style={styles.inputView}>
+            <Icon
+                name="lock"
+                size={27}
+                color="white" 
+                style={{marginTop: 5, marginRight: 8}}
+            />
+            <TextInput
+                placeholder="Confirm Password"
+                placeholderTextColor="white"
+                style={{color:"white", fontSize: 18}}
+            />
+        </View>
+
+        <View style={{marginTop: 80}}>
+            <View style={styles.buttonStyle}>
+                <Text style={{fontSize: 18, color:'white'}}>
+                    SIGN UP
+                </Text>
+            </View>
+        </View>
+    </ScrollView>
   );
    
 const initialLayout = { width: Dimensions.get('window').width };
@@ -26,8 +111,8 @@ const TabLogin = () => {
     ]);
  
     const renderScene = SceneMap({
-        first: FirstRoute,
-        second: SecondRoute,
+        first: signIn,
+        second: signUp,
     });
 
     const renderTabBar = props => (
