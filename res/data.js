@@ -185,7 +185,7 @@ const logins = [
 	},
 ]; 
 
-const setting = [
+const settings = [
 	{
 		id: 1,
 		image: require('./Images/back.jpeg'),
@@ -219,5 +219,5 @@ export {
     homes,
     profiles,
     logins,
-    setting,
+    settings,
 }

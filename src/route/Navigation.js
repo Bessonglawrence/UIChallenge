@@ -11,14 +11,13 @@ import {
     SmartLogin,
     BlackLogin,
     TabLogin,
-    SplashScreens,
     ProfileScreens,
     LoginHome,
     RegisterScreens,
     RoundRegister,
     BlackRegister,
     SmartRegister,
-    SettingScreens,
+    SettingsHome,
     ProfileHome,
     PlainProfile,
 } from './../Pages';
@@ -57,7 +56,7 @@ class Navigation extends Component {
                         <Scene key="home" component={ AppHome } title="Homes" icon={ TabIcon }/> 
                         <Scene key="profile" component={ ProfileHome } title="Profiles" icon={ TabIcon } hideNavBar />
                         <Scene key="login" component={ LoginHome } title="Logins" icon={ TabIcon } hideNavBar />
-                        <Scene key="settings" component={ Example } title="Settings" icon={ TabIcon } hideNavBar />
+                        <Scene key="settings" component={ SettingsHome } title="Settings" icon={ TabIcon } hideNavBar />
                     </Scene>
                 </Stack>
             </Router>
