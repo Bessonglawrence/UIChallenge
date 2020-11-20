@@ -4,6 +4,7 @@ import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 // import ButtonComponent from './../../../components/Button/Button.component';
 import styles from './TabLogin.style';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import { Actions } from 'react-native-router-flux';
 
 const signIn = () => (
     <ScrollView style={styles.mainContainer}>
@@ -34,8 +35,13 @@ const signIn = () => (
             />
         </View>
         <View style={{marginTop: 105}}>
-            <View style={styles.buttonStyle}>
-                <Text style={{fontSize: 18, color:'white'}}>
+            <View 
+                style={styles.buttonStyle}
+            >
+                <Text 
+                    style={{fontSize: 18, color:'white'}}
+                    onPress={() => Actions.pop()}
+                >
                     SIGN IN
                 </Text>
             </View>
@@ -90,8 +96,13 @@ const signUp = () => (
         </View>
 
         <View style={{marginTop: 80}}>
-            <View style={styles.buttonStyle}>
-                <Text style={{fontSize: 18, color:'white'}}>
+            <View 
+                style={styles.buttonStyle}
+            >
+                <Text 
+                    style={{fontSize: 18, color:'white'}}
+                    onPress={() => Actions.pop()}
+                >
                     SIGN UP
                 </Text>
             </View>
