@@ -17,6 +17,7 @@ import {
     RegisterScreens,
     RoundRegister,
     BlackRegister,
+    SmartRegister,
     SettingScreens,
     ProfileHome,
     PlainProfile,
@@ -36,11 +37,12 @@ class Navigation extends Component {
                 <Scene key="roundLogin" component={ RoundLogin } hideNavBar/>
                 <Scene key="smartlogin" component={ SmartLogin } hideNavBar />
                 <Scene key="blacklogin" component={ BlackLogin } hideNavBar />
+                <Scene key="tablogin" component={ TabLogin } hideNavBar />
                 <Scene key="roundregister" component={ RoundRegister } hideNavBar />
                 <Scene key="blackregister" component={ BlackRegister } hideNavBar />
                 <Scene key="socialapp" component={ SocialApp } hideNavBar />
                 <Scene key="plainprofile" component={ PlainProfile } hideNavBar />
-                <Scene key="tablogin" component={ TabLogin } hideNavBar />
+                <Scene key="smartregister" component={ SmartRegister } hideNavBar />
                     <Scene 
                         key="home"
                         tabs

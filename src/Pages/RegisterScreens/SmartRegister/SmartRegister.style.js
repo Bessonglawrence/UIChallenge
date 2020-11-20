@@ -1,7 +1,7 @@
 const styles = {
-        inputContainer:{
+    inputContainer:{
         backgroundColor: 'white', 
-        height: 450, 
+        height: 445, 
         width: 270, 
         position: 'absolute',  
         left: 48, 
@@ -19,15 +19,8 @@ const styles = {
     },
     registerView:{
         alignSelf: 'center', 
-        // top: 558, 
-        // position: 'absolute'
-    },
-    registerText:{
-        alignSelf: 'center', 
-        color: '#187ae7', 
-        fontWeight: 'bold', 
-        fontSize: 18, 
-        textDecorationLine: 'underline'
+        top: 500, 
+        position: 'absolute'
     },
     socialSymbols:{
         fontWeight: 'bold', 
@@ -60,7 +53,7 @@ const styles = {
         borderRadius: 4, 
         alignItems: 'center', 
         justifyContent: 'center', 
-        marginTop: 50
+        marginTop: 30
     },
     or:{
         fontSize: 18, 
