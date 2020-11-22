@@ -8,11 +8,9 @@ import { set } from 'react-native-reanimated';
 
 
 const CardsSetting = () => {
-    const [ SwitchValue, setSwitchValue ] = useState(false);
+    const [ IsEnabled, setIsEnabledValue ] = useState(false);
 
-    const toggleSwitch = (value) =>{
-        setSwitchValue(!value);
-    }
+    const toggleSwitch = () => setIsEnabledValue(previousState => !previousState)
 
  return (
      <View style={styles.mainContainer}>
@@ -56,9 +54,11 @@ const CardsSetting = () => {
                             <Icon name="email" color="white" size={24} style={{marginTop: 2, marginRight: 4}}/>
                             <Text style={{color: 'white', fontSize: 18, marginLeft: 8 }}>Email Notification</Text>
                             <Switch 
+                                trackColor={{ false: "#767577", true: "#81b0ff" }}
+                                thumbColor={IsEnabled ? "#f5dd4b" : "#f4f3f4"}
                                 style={{marginLeft: 73}}
                                 onValueChange={toggleSwitch}
-                                value={SwitchValue}
+                                value={IsEnabled}
                             />
                         </View>
                 </View>
@@ -80,7 +80,7 @@ const CardsSetting = () => {
                             <Switch 
                                 style={{marginLeft: 150}}
                                 onValueChange={toggleSwitch}
-                                value={SwitchValue}
+                                value={IsEnabled}
                             />
                         </View>
                 </View>
