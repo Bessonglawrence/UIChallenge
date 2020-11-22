@@ -28,7 +28,7 @@ class SettingsHome extends Component {
             <FlatList
                 contentContainerStyle={styles.mainContainer}
                 onScrollEndDrag={this.scrollEnded}
-                numColumns={2}
+                numColumns={3}
                 data={settings}
                 renderItem={({ item, index }) => { 
                     {

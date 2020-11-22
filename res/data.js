@@ -188,28 +188,58 @@ const logins = [
 const settings = [
 	{
 		id: 1,
-		image: require('./Images/back.jpeg'),
-		name: 'Music player',
-		about: 'Working in the mungo, I help my clients find apartments, studios in and around Mungo',
-		type: 'non_animated',
-		rating: 5
+		image: require('./Images/cardsSetting.png'),
+		name: 'Cards Setting',
+		color: 'white'
 	},
 	{
 		id: 2,
 		image: require('./Images/back.jpeg'),
 		name: 'Classic home',
-		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
-		type: 'animated',
-		rating: 3
+		color: '#36c93f'
 	},
 	{
 		id: 3,
 		image: require('./Images/back.jpeg'),
 		name: 'Designed home',
-	    about: 'Jakata Real estate consultancy is a registered real estate firm providing property listing service to clients across Africa.',
-		type: 'animated',
-		rating: 4
-	}
+		color: '#36c93f'
+	},
+	{
+		id: 4,
+		image: require('./Images/back.jpeg'),
+		name: 'Music player',
+		color: '#36c93f'
+	},
+	{
+		id: 5,
+		image: require('./Images/back.jpeg'),
+		name: 'Classic home',
+		color: '#36c93f'
+	},
+	{
+		id: 6,
+		image: require('./Images/back.jpeg'),
+		name: 'Designed home',
+		color: '#36c93f'
+	},
+	{
+		id: 7,
+		image: require('./Images/back.jpeg'),
+		name: 'Music player',
+		color: '#36c93f'
+	},
+	{
+		id: 8,
+		image: require('./Images/back.jpeg'),
+		name: 'Classic home',
+		color: '#36c93f'
+	},
+	{
+		id: 9,
+		image: require('./Images/back.jpeg'),
+		name: 'Designed home',
+		color: '#36c93f'
+	},
 ]; 
 
 

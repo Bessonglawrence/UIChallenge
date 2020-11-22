@@ -21,12 +21,7 @@ class SettingsCard extends Component {
                     imageStyle={{ borderRadius: 10}}
                     >
                         <View style={styles.mainTextView}>
-                            <View style={[{backgroundColor: setting.color},styles.ratingView]}>
-                                <Text style={styles.rating}>
-                                    {setting.id}
-                                </Text>
-                            </View>
-                            <Text style={styles.name}>
+                            <Text style={[styles.name],{color: setting.color}}>
                                 {setting.name}
                             </Text>
                         </View>

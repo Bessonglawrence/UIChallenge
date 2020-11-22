@@ -9,23 +9,18 @@ const styles = {
         elevation: 5,
         marginVertical: 15,
         borderRadius: 10,
-        marginHorizontal: 10
+        marginHorizontal: 10,
     },
     image:{
-        height: 190, 
-        width: 140, 
+        height: 150, 
+        width: 100, 
         padding: 10,
         borderRadius: 10,
     },
     mainTextView:{
         flexDirection: 'row', 
-        marginTop: 130,
-        marginLeft: -8
-    },
-    ratingView:{ 
-        paddingVertical: 6, 
-        paddingHorizontal: 17, 
-        borderRadius: 80,
+        marginTop: 90,
+        marginLeft: 1
     },
     rating:{
         color: 'white', 
