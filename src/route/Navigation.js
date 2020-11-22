@@ -18,6 +18,7 @@ import {
     BlackRegister,
     SmartRegister,
     SettingsHome,
+    CardsSetting,
     ProfileHome,
     PlainProfile,
 } from './../Pages';
@@ -42,6 +43,7 @@ class Navigation extends Component {
                 <Scene key="socialapp" component={ SocialApp } hideNavBar />
                 <Scene key="plainprofile" component={ PlainProfile } hideNavBar />
                 <Scene key="smartregister" component={ SmartRegister } hideNavBar />
+                <Scene key="cardsetting" component={ CardsSetting } hideNavBar />
                     <Scene 
                         key="home"
                         tabs

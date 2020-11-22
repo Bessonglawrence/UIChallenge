@@ -10,9 +10,9 @@ class SettingsCard extends Component {
 
             <View style={styles.mainContainer}>
                 <TouchableOpacity onPress={() => {
-                    switch(login.id){
+                    switch(setting.id){
                         case 1:
-                            Actions.minilogin();
+                            Actions.cardsetting();
                             break;
                 }}}>
                     <ImageBackground
