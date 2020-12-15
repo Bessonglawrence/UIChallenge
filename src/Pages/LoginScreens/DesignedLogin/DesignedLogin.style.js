@@ -1,8 +1,7 @@
 const styles = {
     mainContainer:{
-        flex: 1,
-        backgroundColor: 'grey',
-        paddingHorizontal: 20
+        //flex: 1,
+        //backgroundColor: 'grey',
     },
     CreateAccountButton:{
         flexDirection: 'row', 
@@ -47,7 +46,12 @@ const styles = {
         alignSelf: 'center', 
         fontSize: 27, 
         color: 'white', 
-        marginTop: 15
+        marginTop: 15,
+        fontWeight: 'bold'
+    },
+    linearGradient:{
+        flex: 1,
+        paddingHorizontal: 20
     }
 }
 

@@ -1,13 +1,22 @@
 import React from 'react';
 import { View, Text, TextInput } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import LinearGradient from 'react-native-linear-gradient';
 
 import styles from './DesignedLogin.style';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const DesignedLogin = () => {
     return(
+
+        <LinearGradient
+            colors={['#e9dcb4', '#605C3C']} 
+            style={styles.linearGradient}
+            start={{x: 0, y: 0.25}} end={{x: 0.5, y: 1.0}}
+            locations={[0,1]}
+        >
         <View style={styles.mainContainer}>
+
             <Text style={styles.headerText}> Sign In </Text>
             <Icon
                 name="guitar-pick"
@@ -61,6 +70,7 @@ const DesignedLogin = () => {
             </View>
 
         </View>
+        </LinearGradient>
     );
 }
 
