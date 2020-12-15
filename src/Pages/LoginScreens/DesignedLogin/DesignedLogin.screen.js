@@ -43,6 +43,7 @@ const DesignedLogin = () => {
                     />
                 </View>
 
+
             </View>
 
             <View style={{flexDirection: 'row', borderWidth: .5, padding: 13, borderColor: 'white', borderRadius: 30, marginTop: 40, alignItems: 'center', justifyContent: 'center'}}>
@@ -50,6 +51,15 @@ const DesignedLogin = () => {
                     <Text style={{fontSize: 22, color: 'white', fontWeight: 'bold'}}> Sign In </Text>
                 </TouchableOpacity>
             </View>
+
+            <Text style={{alignSelf:"center", color: 'white', fontSize: 18, marginVertical: 8}}> Forgot Password?</Text>
+
+            <View style={{flexDirection: 'row', borderWidth: .5, padding: 13, borderColor: 'white', borderRadius: 30, marginTop: 4, alignItems: 'center', justifyContent: 'center'}}>
+                <TouchableOpacity>
+                    <Text style={{fontSize: 22, color: 'white', fontWeight: 'bold'}}> Create Account </Text>
+                </TouchableOpacity>
+            </View>
+
         </View>
     );
 }
