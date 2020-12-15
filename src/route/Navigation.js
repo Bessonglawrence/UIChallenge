@@ -11,6 +11,7 @@ import {
     SmartLogin,
     BlackLogin,
     TabLogin,
+    DesignedLogin,
     ProfileScreens,
     LoginHome,
     RegisterScreens,
@@ -44,6 +45,7 @@ class Navigation extends Component {
                 <Scene key="plainprofile" component={ PlainProfile } hideNavBar />
                 <Scene key="smartregister" component={ SmartRegister } hideNavBar />
                 <Scene key="cardsetting" component={ CardsSetting } hideNavBar />
+                <Scene key="designedlogin" component={ DesignedLogin } hideNavBar />
                     <Scene 
                         key="home"
                         tabs

@@ -36,7 +36,8 @@ const styles = {
         fontWeight: 'bold', 
         alignSelf: 'center', 
         color: 'white', 
-        textDecorationLine: 'underline'
+        textDecorationLine: 'underline',
+        marginTop: 15
     },
     inputView:{
         flexDirection: 'row', 

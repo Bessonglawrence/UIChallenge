@@ -153,8 +153,8 @@ const logins = [
 	},
 	{
 		id: 6,
-		image: require('./Images/back.jpeg'),
-		name: 'Classic home',
+		image: require('./Images/DesignedLogin.jpg'),
+		name: 'Designed Login',
 		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
 		type: 'animated',
 		color: 'brown'

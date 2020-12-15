@@ -1,5 +1,13 @@
 import { AppHome, RentFlicker, SocialApp } from './HomeScreens';
-import { LoginHome, MiniLogin, RoundLogin, SmartLogin, BlackLogin, TabLogin} from './LoginScreens';
+import { 
+    LoginHome, 
+    MiniLogin, 
+    RoundLogin, 
+    SmartLogin, 
+    BlackLogin, 
+    TabLogin,
+    DesignedLogin,
+} from './LoginScreens';
 import { RoundRegister, BlackRegister, SmartRegister } from './RegisterScreens';
 import { SettingsHome, CardsSetting } from './SettingsScreens';
 import { ProfileHome, PlainProfile } from './ProfileScreens/';
@@ -16,6 +24,7 @@ export {
     SmartLogin,
     BlackLogin,
     TabLogin,
+    DesignedLogin,
     RoundRegister,
     BlackRegister,
     SmartRegister,
