@@ -1,10 +1,15 @@
 import React from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import LinearGradient from 'react-native-linear-gradient';
+import { Actions } from 'react-native-router-flux';
 
 import styles from './DesignedLogin.style';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+
+
+const onButtonPress = () => {
+    Actions.pop();
+}
 
 const DesignedLogin = () => {
     return(
@@ -55,11 +60,9 @@ const DesignedLogin = () => {
 
             </View>
 
-            <View style={styles.signInButton}>
-                <TouchableOpacity>
-                    <Text style={styles.buttonText}> Sign In </Text>
-                </TouchableOpacity>
-            </View>
+            <TouchableOpacity style={styles.signInButton} onPress={onButtonPress} >
+                <Text style={styles.buttonText} > Sign In </Text>
+            </TouchableOpacity>
 
             <Text style={styles.forgotPasswordText}> Forgot Password?</Text>
 

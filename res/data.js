@@ -157,7 +157,7 @@ const logins = [
 		name: 'Designed Login',
 		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
 		type: 'animated',
-		color: 'brown'
+		color: '#605C3C'
 	},
 	{
 		id: 7,

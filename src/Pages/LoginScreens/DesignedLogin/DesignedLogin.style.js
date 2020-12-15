@@ -22,7 +22,8 @@ const styles = {
         alignSelf:"center", 
         color: 'white', 
         fontSize: 18, 
-        marginVertical: 8
+        marginVertical: 8,
+        textDecorationLine: 'underline'
     },
     signInButton:{
         flexDirection: 'row', 
