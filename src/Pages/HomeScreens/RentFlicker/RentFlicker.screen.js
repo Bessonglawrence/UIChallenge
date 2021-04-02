@@ -53,7 +53,7 @@ const RentFlicker = () => {
                                 style={styles.categoryCardImage}
                             />
                             <Text style={styles.categoryCardText}>
-                                Bedroom
+                                Bedrooms
                             </Text>
                         </TouchableOpacity>
                         <TouchableOpacity>
