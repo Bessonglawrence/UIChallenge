@@ -20,16 +20,28 @@ const WhiteSetting = () => {
                         <Text style={{fontSize: 20, marginLeft: 25}}>Title</Text>
                     </View>
 
-                    <View styles={{borderBottomWidth: 0.5, borderColor: 'grey'}}>
-                        <View style={{justifyContent: 'space-between', flexDirection: 'row'}}>
+                        <View style={{justifyContent: 'space-between', flexDirection: 'row', marginBottom: 15}}>
                             <View style={{flexDirection: 'row'}}>
                                 <Icon name="clock" size={25} color="grey"/>
                                 <Text style={{fontSize: 18, marginLeft: 25}}>ALL DAY EVENT</Text>
                             </View>
                             <Switch />
                         </View>
-                        <Icon />
-                    </View>
+                        <View style={{flexDirection: 'row'}}>
+                            <Icon name="logout" color="grey" size={30}/>
+                            <View style={{ borderBottomWidth: 0.5, borderTopWidth: 0.5, borderColor: 'grey',}}>
+                                <View style={{flexDirection: 'row'}}>
+                                    <View style={{borderRightWidth: 0.5, borderColor: 'grey', padding: 5}}>
+                                        <Text>Date</Text>
+                                        <Text>Sat, January 16</Text>
+                                    </View>
+                                    <View style={{padding: 5}}>
+                                        <Text>Date</Text>
+                                        <Text>Sat, January 16</Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
 
                 </View>
             </View>
