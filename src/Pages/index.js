@@ -9,7 +9,7 @@ import {
     DesignedLogin,
 } from './LoginScreens';
 import { RoundRegister, BlackRegister, SmartRegister } from './RegisterScreens';
-import { SettingsHome, CardsSetting } from './SettingsScreens';
+import { SettingsHome, CardsSetting, WhiteSetting } from './SettingsScreens';
 import { ProfileHome, PlainProfile } from './ProfileScreens/';
 import Example from './Example/Example.page'
 
@@ -30,6 +30,7 @@ export {
     SmartRegister,
     SettingsHome,
     CardsSetting,
+    WhiteSetting,
     ProfileHome,
     PlainProfile,
 }

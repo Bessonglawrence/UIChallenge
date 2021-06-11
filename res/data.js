@@ -194,9 +194,9 @@ const settings = [
 	},
 	{
 		id: 2,
-		image: require('./Images/back.jpeg'),
-		name: 'Classic home',
-		color: '#36c93f'
+		image: require('./Images/WhiteSetting.jpeg'),
+		name: 'White Setting',
+		color: 'grey'
 	},
 	{
 		id: 3,

@@ -14,6 +14,9 @@ class SettingsCard extends Component {
                         case 1:
                             Actions.cardsetting();
                             break;
+                        case 2:
+                            Actions.whitesetting()
+                            break;
                 }}}>
                     <ImageBackground
                     source = {setting.image}
