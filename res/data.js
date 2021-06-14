@@ -75,10 +75,11 @@ const profiles = [
 	},
 	{
 		id: 2,
-		image: require('./Images/back.jpeg'),
-		name: 'Classic profile',
+		image: require('./Images/purple.png'),
+		name: 'Purple profile',
 		about: 'I am specialized agent with over 5 years experience working with clients all over Douala. I will be glad to be of service',
-		type: 'animated'
+		type: 'animated',
+		color: 'purple'
 	},
 	{
 		id: 3,

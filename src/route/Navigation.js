@@ -23,6 +23,7 @@ import {
     WhiteSetting,
     ProfileHome,
     PlainProfile,
+    PurpleProfile,
 } from './../Pages';
 import {
     TabIcon 
@@ -48,6 +49,7 @@ class Navigation extends Component {
                 <Scene key="cardsetting" component={ CardsSetting } hideNavBar />
                 <Scene key="whitesetting" component={ WhiteSetting } hideNavBar />
                 <Scene key="designedlogin" component={ DesignedLogin } hideNavBar />
+                <Scene key="purpleprofile" component={ PurpleProfile } hideNavBar />
                     <Scene 
                         key="home"
                         tabs

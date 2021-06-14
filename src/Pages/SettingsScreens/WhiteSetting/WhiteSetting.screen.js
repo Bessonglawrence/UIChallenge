@@ -1,14 +1,23 @@
 import React from "react";
-import { View, Text, SafeAreaView, StatusBar,ScrollView, Switch} from "react-native";
+import { 
+    View, 
+    Text, 
+    ScrollView, 
+    Switch,
+    TouchableOpacity
+} from "react-native";
 import styles from "./WhiteSetting.style";
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import { Actions } from "react-native-router-flux";
 
 const WhiteSetting = () => {
     return (
             <ScrollView style={styles.mainContainer}>
                 <View style={styles.navBar}>
                     <View style={{flexDirection: 'row'}}>
-                        <Icon name="close" size={40} color="white"/>
+                        <TouchableOpacity onPress={() => Actions.pop()}>
+                            <Icon name="close" size={40} color="white"/>
+                        </TouchableOpacity>
                         <Text style={{fontSize: 25, color: 'white', marginLeft: 10}}>New Event</Text>
                     </View>
                     <Icon name="check" size={40} color="white"/>

@@ -15,7 +15,8 @@ class ProfileCard extends Component {
                             Actions.plainprofile();
                             break;
                         case 2:
-                            Actions.socialapp();
+                            Actions.purpleprofile();
+                            break;
                 }}}>
                     <ImageBackground
                     source = {profile.image}
@@ -23,12 +24,12 @@ class ProfileCard extends Component {
                     imageStyle={{ borderRadius: 10}}
                     >
                         <View style={styles.mainTextView}>
-                            <View style={[{backgroundColor: profile.color},styles.ratingView]}>
+                            <View style={styles.ratingView}>
                                 <Text style={styles.rating}>
                                     {profile.rating}
                                 </Text>
                             </View>
-                            <Text style={styles.name}>
+                            <Text style={[styles.name, {color: profile.color}]}>
                                 {profile.name}
                             </Text>
                         </View>

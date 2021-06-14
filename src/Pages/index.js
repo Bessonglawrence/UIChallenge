@@ -10,7 +10,7 @@ import {
 } from './LoginScreens';
 import { RoundRegister, BlackRegister, SmartRegister } from './RegisterScreens';
 import { SettingsHome, CardsSetting, WhiteSetting } from './SettingsScreens';
-import { ProfileHome, PlainProfile } from './ProfileScreens/';
+import { ProfileHome, PlainProfile, PurpleProfile } from './ProfileScreens/';
 import Example from './Example/Example.page'
 
 export {
@@ -33,4 +33,5 @@ export {
     WhiteSetting,
     ProfileHome,
     PlainProfile,
+    PurpleProfile,
 }
